@@ -39,10 +39,10 @@ function Eventos() {
                   <CardHeader>
                     <CardTitle>{item.nombre}</CardTitle>
                     <CardDescription>Card Description</CardDescription>
-                    <Image src={item.image} alt="demo" width={250} height={150}/>
+                    <Image src={item.image} alt="demo" width={250} height={150} className="w-full h-full object-cover"/>
                   </CardHeader>
                   <CardContent>
-                    <p>{item.description}</p>
+                    <p className="line-clamp-5">{item.description}</p>
                   </CardContent>
                   <CardFooter>
                     <p>{item.fechaPublicacion}</p>

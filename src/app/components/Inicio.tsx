@@ -67,7 +67,7 @@ function Inicio() {
                     {carousel.map((banner, index) => (
                         <CarouselItem key={index} className={`h-[300px]`}>
                             <div className={``}>
-                                <Image unoptimized src={banner.url} className="w-full h-full object-cover object-center" height={0} width={0} alt={banner.nomre} />
+                                <Image unoptimized src={banner.url} className="w-full h-full object-cover" height={0} width={0} alt={banner.nomre} />
                                 {/* <h1 className="absolute bottom-0 right-0 border-2">{banner.nomre}</h1> */}
                             </div>
                         </CarouselItem>
