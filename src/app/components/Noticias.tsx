@@ -1,8 +1,10 @@
 const Noticias = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <section className="noticias">
+        
+      </section>
+    </>
   )
 }
 
