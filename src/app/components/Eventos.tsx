@@ -29,9 +29,9 @@ const eventos: Event[] = [
 function Eventos() {
   return (
     <>
-      <section className="eventos w-full flex flex-col gap-2 p-4">
+      <section className="eventos w-full max-w-[98%] mx-auto flex flex-col gap-2 p-4">
         <h2 className="font-serif text-2xl text-slate-700">Eventos Destacados</h2>
-        <article className="grid grid-cols-3 gap-4">
+        <article className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {
             eventos.map((item) => {
               return (
