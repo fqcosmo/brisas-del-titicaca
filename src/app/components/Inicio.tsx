@@ -65,8 +65,8 @@ function Inicio() {
             <Carousel className="max-w-full" opts={{ loop: true }}>
                 <CarouselContent>
                     {carousel.map((banner, index) => (
-                        <CarouselItem key={index} className={`h-[300px]`}>
-                            <div className={``}>
+                        <CarouselItem key={index} className={`h-[200px] md:h-[300px]`}>
+                            <div className={`w-full h-full`}>
                                 <Image unoptimized src={banner.url} className="w-full h-full object-cover" height={0} width={0} alt={banner.nombre} />
                                 {/* <h1 className="absolute bottom-0 right-0 border-2">{banner.nombre}</h1> */}
                             </div>
