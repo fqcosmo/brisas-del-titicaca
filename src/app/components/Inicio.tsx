@@ -16,27 +16,27 @@ function Inicio() {
     const carousel = [
         {
             color: "bg-red-800",
-            nomre: "Banner 1",
+            nombre: "Banner 1",
             url: "https://cdn.joinnus.com/user/3068910/uiV7JPMHHg0u23D.png",
         },
         {
             color: "bg-blue-800",
-            nomre: "Banner 2",
+            nombre: "Banner 2",
             url: "https://cdn.joinnus.com/user/3068910/sDoZbNGm20Nvvzx.png",
         },
         {
             color: "bg-green-800",
-            nomre: "Banner 3",
+            nombre: "Banner 3",
             url: "https://cdn.joinnus.com/user/3068910/tQC8Fj53Xjm4jTG.png",
         },
         {
             color: "bg-yellow-800",
-            nomre: "Banner 4",
+            nombre: "Banner 4",
             url: "https://cdn.joinnus.com/files/2024/08/nmtnTwbNUmfBbUn.png",
         },
         {
             color: "bg-purple-800",
-            nomre: "Banner 5",
+            nombre: "Banner 5",
             url: "https://cdn.joinnus.com/files/2024/06/7CV8xqSSJ6vqVw1.png",
         },
     ];
@@ -67,8 +67,8 @@ function Inicio() {
                     {carousel.map((banner, index) => (
                         <CarouselItem key={index} className={`h-[300px]`}>
                             <div className={``}>
-                                <Image unoptimized src={banner.url} className="w-full h-full object-cover" height={0} width={0} alt={banner.nomre} />
-                                {/* <h1 className="absolute bottom-0 right-0 border-2">{banner.nomre}</h1> */}
+                                <Image unoptimized src={banner.url} className="w-full h-full object-cover" height={0} width={0} alt={banner.nombre} />
+                                {/* <h1 className="absolute bottom-0 right-0 border-2">{banner.nombre}</h1> */}
                             </div>
                         </CarouselItem>
                     ))}
