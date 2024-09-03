@@ -48,7 +48,7 @@ const Talleres = () => {
       <h2 className="font-serif text-2xl text-slate-700">Talleres</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {talleres.map((taller, index) => (
-          <div className="rounded-md grid grid-rows-[200px_auto] sm:grid-rows-[150px_auto] gap-5 overflow-hidden border pb-5 shadow-lg hover:shadow-2xl">
+          <div key={index} className="rounded-md grid grid-rows-[200px_auto] sm:grid-rows-[150px_auto] gap-5 overflow-hidden border pb-5 shadow-lg hover:shadow-2xl">
             <Image src={taller.image} height={150} width={150} alt={taller.titulo} className="w-full h-full object-cover" />
             <div className="h-[25px] w-full px-3">
               <h1 className="text-sm font-bold">{taller.titulo}{index+1}</h1>

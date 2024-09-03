@@ -34,7 +34,7 @@ const Noticias = () => {
       <h2 className="font-serif text-2xl text-slate-700">Noticias</h2>
       <section className="noticias w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {noticias.map((noticia, index) => (
-          <div className="w-full h-auto flex flex-col gap-3 border rounded-md p-5">
+          <div key={index} className="w-full h-auto flex flex-col gap-3 border rounded-md p-5">
             <h1 className="tex-base font-bold">{noticia.titulo}{index+1}</h1>
             <p className="text-sm line-clamp-5">{noticia.parrafo}</p>
           </div>
