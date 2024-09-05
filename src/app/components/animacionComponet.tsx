@@ -15,7 +15,7 @@ export default function AnimacionComponet() {
 
             </div>
             <div className="h-full w-full flex items-center justify-center border-2" onMouseEnter={() => setStyle2(true)} onMouseLeave={() => setStyle2(false)} >
-                <img src="https://sayacaporal.com/wp-content/uploads/2021/05/vestimenta-saya-caporal-hombre.png" alt="" className={`border-2 h-[80%] w-auto object-cover ${style2 && 'animate-bounce'}`} />
+                <img src="https://sayacaporal.com/wp-content/uploads/2021/05/vestimenta-saya-caporal-hombre.png" alt="" className={`border-2 h-[80%] w-auto object-cover ${style2 && 'animate-shake animate-infinite'}`} />
             </div>
         </div>
     )
