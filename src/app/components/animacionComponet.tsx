@@ -24,8 +24,8 @@ export default function AnimacionComponet() {
 
     const images2 = [
         "https://www.brisasdeltiticaca.com/wp-content/uploads/2023/04/Bailarina-09.webp",
-+        "https://www.brisasdeltiticaca.com/wp-content/uploads/2023/04/Bailarin-08.webp",
-        "https://www.brisasdeltiticaca.com/wp-content/uploads/2023/04/Bailarina-07.webp"
+        "https://www.brisasdeltiticaca.com/wp-content/uploads/2023/04/Bailarin-08.webp",
+        "https://www.brisasdeltiticaca.com/wp-content/uploads/2023/04/Bailarina-08.webp"
     ]
 
     return (
