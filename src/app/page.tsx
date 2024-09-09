@@ -4,8 +4,10 @@ import Eventos from "./components/Eventos";
 import Talleres from "./components/Talleres";
 import Noticias from "./components/Noticias";
 import Contacto from "./components/contacto";
+import { useSession } from "@/context/SessionContext";
 
 export default function Home() {
+
   return (
     <main className="w-full flex flex-col gap-3">
       <Inicio />

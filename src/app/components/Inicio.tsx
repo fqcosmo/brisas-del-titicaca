@@ -7,11 +7,16 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { useSession } from "@/context/SessionContext";
 import Image from "next/image";
 import { FaSearch } from "react-icons/fa";
 import { MdEvent } from "react-icons/md";
 
 function Inicio() {
+
+    const { session, updateSession } = useSession()
+
+  console.log(session)
 
     const carousel = [
         {
