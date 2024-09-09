@@ -30,20 +30,14 @@ export default function LoginComponent() {
 
         const res = await responseLogin.json()
 
-        if (responseLogin.ok) {
-            setCookie('auth_token', res.access_token, { maxAge: 3600 })
-            toast.success('Inicio de sesion correctamente.')
+        if (!responseLogin.ok) {
+            toast.warning('Datos incorrectos',)
         }
-        else{
-            toast.warning('Datos incorrectos', )
-        }
-
-        console.log(res)
-
+        setCookie('auth_token', res.access_token, { maxAge: 3600 })
+        toast.success('Inicio de sesion correctamente.')
     }
 
     return (
-        <>
             <div className="min-h-screen w-full grid grid-cols-1 md:grid-cols-[60%_40%] lg:grid-cols-[70%_30%] bg-[#1f1f1f]">
                 <div className="w-full h-full">
                     <Image unoptimized src="https://cdn.joinnus.com/user/3068910/sDoZbNGm20Nvvzx.png" className="h-full w-full object-cover" alt="login" width={0} height={0} />
@@ -54,6 +48,5 @@ export default function LoginComponent() {
                     <Button variant="outline" className="w-full">Iniciar</Button>
                 </form>
             </div>
-        </>
     )
 }
