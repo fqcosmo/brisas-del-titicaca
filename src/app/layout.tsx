@@ -17,28 +17,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
 
-  const cookie = cookies();
-  //console.log(cookie.get('auth_token'))
-  const cookieValue = cookie.get('auth_token')
-
-  const session = await fetch('https://mgscpz76-3000.brs.devtunnels.ms/session', {
-    method: 'GET',
-    headers: {
-      "Content-type": 'application/json',
-      Authorization: `Bearer ${cookieValue?.value}`
-    },
-  })
-
-  const res = await session.json();
-
   return (
     <html lang="en">
       <body className={inter.className}>
 
         <ToastContainer theme="dark" position="bottom-right" />
-        <SessionProvider serverSession={res}>
-          {children}
-        </SessionProvider>
+        {children}
       </body>
     </html>
   );
