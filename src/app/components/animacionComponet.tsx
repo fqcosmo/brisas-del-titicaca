@@ -35,7 +35,7 @@ export default function AnimacionComponet() {
                     <CarouselContent className='h-full'>
                         {images.map((link, index) => (
                             <CarouselItem key={index} className='h-full w-full flex items-center justify-center'>
-                                <img src={link} alt="" className={`h-[80%] w-auto object-cover ${style2 == 1 && 'animate-shake animate-infinite  animate-duration-1000'}`} />
+                                <img src={link} alt="" className={`h-[600px] w-auto object-cover ${style2 == 1 && 'animate-shake animate-infinite  animate-duration-1000'}`} />
                             </CarouselItem>
                         ))}
                     </CarouselContent>
@@ -63,7 +63,7 @@ export default function AnimacionComponet() {
                     <CarouselContent>
                         {images2.map((link, index) => (
                             <CarouselItem key={index} className='h-full w-full flex items-center justify-center'>
-                                <img src={link} alt="" className={`h-[80%] w-auto object-cover ${style2 == 2 && 'animate-shake animate-infinite  animate-duration-1000'}`} />
+                                <img src={link} alt="" className={`h-[600px] w-auto object-cover ${style2 == 2 && 'animate-shake animate-infinite  animate-duration-1000'}`} />
                             </CarouselItem>
                         ))}
                     </CarouselContent>
